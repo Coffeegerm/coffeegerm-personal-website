@@ -226,7 +226,7 @@ const Home: NextPage = () => {
                   name="Message"
                   id="message"
                   placeholder="Message"
-                  rows="4"
+                  rows={4}
                   onChange={(event) => {
                     setMessage(event.target.value);
                   }}
