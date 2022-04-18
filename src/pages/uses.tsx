@@ -1,32 +1,43 @@
-import React from 'react';
+import React from "react";
 
 const Uses = () => (
-  <div>
-    <h1>Spilt Coffee and Lovely Terminals</h1>
-    <p>
-      These are a few of the things that I use on a daily basis for work and/or
-      hobby.
-    </p>
+  <div
+    style={{
+      justifyContent: "center",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    <div>
+      <h1 className="main-heading">Spilt Coffee and Lovely Terminals</h1>
+      <p>
+        These are a few of the things that I use on a daily basis for work
+        and/or hobby.
+      </p>
 
-    <h4>Hardware</h4>
-    <ul>
-      <li>Custom Built Desktop</li>
-      <li>Akko 3068 with Cherry MX Reds</li>
-      <li>ASUS 24&quot; 144hz monitor</li>
-      <li>Logitech G502 Mouse</li>
-      <li>Audio Technica MX50 Headphones</li>
-      <li>Lenovo Touchpad X2</li>
-      <li>Blue Yeti Microphone</li>
-    </ul>
+      <div>
+        <h4>Hardware</h4>
+        <ul>
+          <li>Custom standing desk</li>
+          <li>Keychron K2 with Cherry MX Browns</li>
+          <li>Logitech G502 Mouse</li>
+          <li>Audio Technica MX50 Headphones</li>
+          <li>Blue Yeti Microphone</li>
+        </ul>
+      </div>
 
-    <h4>Software</h4>
-    <p>The bread and the butter</p>
-    <ul>
-      <li>VSCode - Dont think any other editor compares anymore</li>
-      <li>Cmder and Windows Terminal - Going back and forth anymore</li>
-      <li>Notable for note taking</li>
-      <li>Google Chrome</li>
-    </ul>
+      <div>
+        <h4>Software</h4>
+        <p>The bread and the butter</p>
+        <ul>
+          <li>VSCode - Dont think any other editor compares anymore</li>
+          <li>iTerm</li>
+          <li>ZSH</li>
+          <li>Notion</li>
+          <li>Google Chrome</li>
+        </ul>
+      </div>
+    </div>
   </div>
 );
 
