@@ -1,4 +1,6 @@
-type BookReview = {
+import { Annotations } from "./responses/notion";
+
+export type BookReview = {
   id: string;
   rating: {
     id: string;

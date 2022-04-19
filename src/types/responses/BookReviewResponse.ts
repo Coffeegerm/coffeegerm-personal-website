@@ -1,4 +1,6 @@
-type BookReviewResponse = {
+import { DateValue, MultiSelectValue, RichTextValue, SelectItemValue } from "./notion";
+
+export type BookReviewResponse = {
   cover: string | null;
   created_by: {
     id: string;

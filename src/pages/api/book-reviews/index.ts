@@ -2,6 +2,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Client } from "@notionhq/client";
 import { convertBookReviewResponseToBookReview } from "../../../utils/data";
+import { BookReviewResponse } from "../../../types/responses/BookReviewResponse";
+import { BookReview } from "../../../types/BookReview";
 
 const { NOTION_CLIENT_AUTH_SECRET, BOOK_REVIEWS_DATABASE_ID } = process.env;
 
@@ -20,7 +22,7 @@ export const getBookReviews = async () => {
   });
 
   // despite what the type says these values match this type
-  const rows = response.results as BookReviewResponse[];
+  const rows = response.results as unknown as BookReviewResponse[];
 
   // morph the structure into something more easily used by the frontend
   return rows.map(

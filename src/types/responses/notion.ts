@@ -1,8 +1,8 @@
 // structure of items received from notion api endpoints
 
-type NotionPropertyTypes = "select" | "rich_text" | "date" | "multi_select";
+export type NotionPropertyTypes = "select" | "rich_text" | "date" | "multi_select";
 
-type Annotations = {
+export type Annotations = {
   bold: boolean;
   code: boolean;
   color: string;
@@ -11,13 +11,13 @@ type Annotations = {
   underline: boolean;
 };
 
-type SelectItemValue = {
+export type SelectItemValue = {
   color: string;
   id: string;
   name: string;
 } | null;
 
-type RichTextValue = Array<{
+export type RichTextValue = Array<{
   annotations: Annotations;
   href: null | string;
   plain_text: string;
@@ -28,18 +28,18 @@ type RichTextValue = Array<{
   type: string;
 }>;
 
-type DateValue = {
+export type DateValue = {
   start: string | null;
   end: string | null;
   time_zone: string | null;
 };
 
-type MultiSelectValue = Array<{
+export type MultiSelectValue = Array<{
   color: string;
   id: string;
   name: string;
 }> | null;
 
-type ParagraphValue = {
+export type ParagraphValue = {
   rich_text: Array<RichTextValue>
 }

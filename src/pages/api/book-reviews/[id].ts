@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Client } from "@notionhq/client";
 import { convertBookReviewResponseToBookReview } from "../../../utils/data";
+import { BookReviewResponse } from "../../../types/responses/BookReviewResponse";
 
 const { NOTION_CLIENT_AUTH_SECRET } = process.env;
 
@@ -11,14 +12,23 @@ const notion = new Client({
 export const getPage = async (reviewId: string) => {
   const page = await notion.pages.retrieve({ page_id: reviewId });
 
-  const response = await notion.blocks.children.list({
+  const pageBlocks = await notion.blocks.children.list({
     block_id: reviewId,
     page_size: 100,
   });
 
-  const info = convertBookReviewResponseToBookReview(page);
+  const bookResponse = page as unknown as BookReviewResponse;
 
-  const content = response.results
+  const info = convertBookReviewResponseToBookReview(bookResponse);
+
+  const pageBlocksToTransform = pageBlocks.results as unknown as {
+    type: string;
+    paragraph: {
+      rich_text: { plain_text: string }[];
+    };
+  }[];
+
+  const content = pageBlocksToTransform
     .map((val) => {
       if (val.type === "paragraph") {
         return val.paragraph.rich_text[0]?.plain_text;
