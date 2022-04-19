@@ -11,6 +11,7 @@ const navStyle: CSSProperties = {
   width: "100%",
   zIndex: 1000,
   padding: "1rem 0",
+  backgroundColor: 'gray'
 };
 
 const groupedItemsStyle: CSSProperties = {
