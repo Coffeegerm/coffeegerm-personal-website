@@ -1,0 +1,832 @@
+[
+  {
+    "object": "page",
+    "id": "ee235197-980d-4de4-be5a-b649ce45a1d0",
+    "created_time": "2022-04-15T17:56:00.000Z",
+    "last_edited_time": "2022-04-15T18:37:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "07289e3d-76a2-4550-b1e9-4a1b16727504",
+            "name": "Sci-Fi",
+            "color": "pink"
+          }
+        ]
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "rGUc",
+          "name": "4",
+          "color": "orange"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Annalee Newitz",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Annalee Newitz",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": null
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Autonomous",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Autonomous",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Autonomous-ee235197980d4de4be5ab649ce45a1d0"
+  },
+  {
+    "object": "page",
+    "id": "93a2d052-3467-400f-a260-8e374b11c850",
+    "created_time": "2022-04-15T15:12:00.000Z",
+    "last_edited_time": "2022-04-15T15:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "07289e3d-76a2-4550-b1e9-4a1b16727504",
+            "name": "Sci-Fi",
+            "color": "pink"
+          },
+          {
+            "id": "78b24ff8-7f3c-467a-91ec-968b4b514e34",
+            "name": "Thriller",
+            "color": "purple"
+          }
+        ]
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": ">[Gp",
+          "name": "4.5",
+          "color": "red"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Blake Crouch",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Blake Crouch",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2022-01-02",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Recursion",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Recursion",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Recursion-93a2d0523467400fa2608e374b11c850"
+  },
+  {
+    "object": "page",
+    "id": "5d2a0c19-f02c-4bab-8dfa-6eab8d22215f",
+    "created_time": "2022-04-15T15:11:00.000Z",
+    "last_edited_time": "2022-04-15T15:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78b24ff8-7f3c-467a-91ec-968b4b514e34",
+            "name": "Thriller",
+            "color": "purple"
+          },
+          {
+            "id": "8fd81054-1214-4989-9a2e-2ec4bbd25601",
+            "name": "Domestic Thriller",
+            "color": "red"
+          }
+        ]
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "VkF`",
+          "name": "3.5",
+          "color": "yellow"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Peter Swanson",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Peter Swanson",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2022-04-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Her Every Fear",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Her Every Fear",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Her-Every-Fear-5d2a0c19f02c4bab8dfa6eab8d22215f"
+  },
+  {
+    "object": "page",
+    "id": "858b38f7-ad22-4f5a-b23f-69764339fb29",
+    "created_time": "2022-04-15T15:11:00.000Z",
+    "last_edited_time": "2022-04-15T15:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "VkF`",
+          "name": "3.5",
+          "color": "yellow"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Matt Haig",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Matt Haig",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2022-01-12",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Midnight Library",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Midnight Library",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/The-Midnight-Library-858b38f7ad224f5ab23f69764339fb29"
+  },
+  {
+    "object": "page",
+    "id": "6f72799f-46a1-4ba0-84dc-99a4d272c91d",
+    "created_time": "2022-04-15T15:10:00.000Z",
+    "last_edited_time": "2022-04-15T15:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "78b24ff8-7f3c-467a-91ec-968b4b514e34",
+            "name": "Thriller",
+            "color": "purple"
+          },
+          {
+            "id": "8fd81054-1214-4989-9a2e-2ec4bbd25601",
+            "name": "Domestic Thriller",
+            "color": "red"
+          }
+        ]
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "ePQE",
+          "name": "5",
+          "color": "pink"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Lisa Jewell",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Lisa Jewell",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2022-01-19",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The Family Upstairs",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "The Family Upstairs",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/The-Family-Upstairs-6f72799f46a14ba084dc99a4d272c91d"
+  },
+  {
+    "object": "page",
+    "id": "26287b14-5f37-4b51-b326-881f6105e7ae",
+    "created_time": "2022-04-15T15:09:00.000Z",
+    "last_edited_time": "2022-04-17T00:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": [
+          {
+            "id": "543bffe9-f827-4ab2-826c-6311f3993cd6",
+            "name": "Fantasy",
+            "color": "blue"
+          },
+          {
+            "id": "d93577ea-ffd0-4112-9819-7478b2247b6e",
+            "name": "Spicy",
+            "color": "yellow"
+          }
+        ]
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "WHAT. A. FUCKING. WORLD.\nThe amount of lore and world building that is thrown at you very quickly can be overwhelming in the beginning, and there is little outside of the words on the page to assist in helping set you up for success when jumping into it. Some books will give you a sort of index in the beginning or the back to assist in keeping the characters aligned in your mind about what house they may belong to (Black Sun does this very well) and I think this book series would greatly benefit from that.\nHowever, once you do get to a point where you have a better understanding of how the world is structured and the relationships that the houses share with the characters and what they truly mean, wow is this a wonderful world to be enveloped in.\nI really was not a fan of the two love interests in the beginning of this novel, Bryce and Hunt were very involved with only themselves and just not very likable people in the beginning, yet by the end of the novel I was in love with them both. It was like making the Drop and learning more about these complex characters and their problems and how they overcome the struggles that they've faced and where they want to go and the love thats fostered between the two of them was making the swim back up from it. The last 150 pages of this novel had my heart racing and me cheering for them in every meaningful way.\nWhile the writing was rather questionable in some areas, Sarahs use of growl and snarl in particular get old very quickly, the spicy scenes were very sexy and the action was enticing. With a novel as dense as this there has to be a payoff at the end, and the climax here does not disappoint. It takes the world building with the city and pushes it to the max. The characters themselves show their truest colors and makes you fall in love with them even more at the end of it. Hunt is a very loyal and sacrificial person for the one that he loves and Bryce, god, Bryce is a badass.\nThis was a great intro to Sarah J Maas for me and I am really looking forward to reading more of hers and the second to this series.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "WHAT. A. FUCKING. WORLD.\nThe amount of lore and world building that is thrown at you very quickly can be overwhelming in the beginning, and there is little outside of the words on the page to assist in helping set you up for success when jumping into it. Some books will give you a sort of index in the beginning or the back to assist in keeping the characters aligned in your mind about what house they may belong to (Black Sun does this very well) and I think this book series would greatly benefit from that.\nHowever, once you do get to a point where you have a better understanding of how the world is structured and the relationships that the houses share with the characters and what they truly mean, wow is this a wonderful world to be enveloped in.\nI really was not a fan of the two love interests in the beginning of this novel, Bryce and Hunt were very involved with only themselves and just not very likable people in the beginning, yet by the end of the novel I was in love with them both. It was like making the Drop and learning more about these complex characters and their problems and how they overcome the struggles that they've faced and where they want to go and the love thats fostered between the two of them was making the swim back up from it. The last 150 pages of this novel had my heart racing and me cheering for them in every meaningful way.\nWhile the writing was rather questionable in some areas, Sarahs use of growl and snarl in particular get old very quickly, the spicy scenes were very sexy and the action was enticing. With a novel as dense as this there has to be a payoff at the end, and the climax here does not disappoint. It takes the world building with the city and pushes it to the max. The characters themselves show their truest colors and makes you fall in love with them even more at the end of it. Hunt is a very loyal and sacrificial person for the one that he loves and Bryce, god, Bryce is a badass.\nThis was a great intro to Sarah J Maas for me and I am really looking forward to reading more of hers and the second to this series.",
+            "href": null
+          }
+        ]
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "VkF`",
+          "name": "3.5",
+          "color": "yellow"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Sarah J Maas",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Sarah J Maas",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2022-03-04",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "House of Earth and Blood",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "House of Earth and Blood",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/House-of-Earth-and-Blood-26287b145f374b51b326881f6105e7ae"
+  },
+  {
+    "object": "page",
+    "id": "dba2b728-86ed-4adf-865f-a8501e811f96",
+    "created_time": "2022-04-15T15:08:00.000Z",
+    "last_edited_time": "2022-04-15T15:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": "rGUc",
+          "name": "4",
+          "color": "orange"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Jon Krakauer",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Jon Krakauer",
+            "href": null
+          }
+        ]
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2021-10-09",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "At The Banner of Heaven",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "At The Banner of Heaven",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/At-The-Banner-of-Heaven-dba2b72886ed4adf865fa8501e811f96"
+  },
+  {
+    "object": "page",
+    "id": "4d33281a-9774-428a-b322-6195396d4e09",
+    "created_time": "2022-04-15T15:05:00.000Z",
+    "last_edited_time": "2022-04-15T18:37:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "037aade8-45dd-4eac-a416-3009de3ffcaa"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "database_id",
+      "database_id": "95478809-85b9-4858-9b5d-9d988de5e851"
+    },
+    "archived": false,
+    "properties": {
+      "Genres": {
+        "id": "%3A%5EEd",
+        "type": "multi_select",
+        "multi_select": []
+      },
+      "Property": {
+        "id": "DsTU",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "/5": {
+        "id": "O_Q%40",
+        "type": "select",
+        "select": {
+          "id": ">[Gp",
+          "name": "4.5",
+          "color": "red"
+        }
+      },
+      "Author": {
+        "id": "O%60Bi",
+        "type": "rich_text",
+        "rich_text": []
+      },
+      "Date Finished": {
+        "id": "al%3F%60",
+        "type": "date",
+        "date": {
+          "start": "2021-12-23",
+          "end": null,
+          "time_zone": null
+        }
+      },
+      "Title": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Where the Crawdads Sing",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Where the Crawdads Sing",
+            "href": null
+          }
+        ]
+      }
+    },
+    "url": "https://www.notion.so/Where-the-Crawdads-Sing-4d33281a9774428ab3226195396d4e09"
+  }
+]
