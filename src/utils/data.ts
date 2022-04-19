@@ -1,3 +1,6 @@
+import { BookReview } from "../types/BookReview";
+import { BookReviewResponse } from "../types/responses/BookReviewResponse";
+
 export const convertBookReviewResponseToBookReview = (
   val: BookReviewResponse
 ): BookReview => {
