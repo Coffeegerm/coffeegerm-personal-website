@@ -11,7 +11,7 @@ const navStyle: CSSProperties = {
   width: "100%",
   zIndex: 1000,
   padding: "1rem 0",
-  backgroundColor: 'gray'
+  backgroundColor: 'black'
 };
 
 const groupedItemsStyle: CSSProperties = {
@@ -28,7 +28,7 @@ export const NavBar = () => (
       <Link href="/projects">Projects</Link>
       <Link href="/uses">Uses</Link>
       <Link href="/about">About</Link>
-      <a>Blog</a>
+      <Link href="/blog">Blog</Link>
     </div>
 
     <div style={{ flex: 1, textAlign: "center" }}>

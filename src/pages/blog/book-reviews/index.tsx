@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { BookReview } from "../../types/BookReview";
+import ReviewCard from "../../../components/ReviewCard";
+import { BookReview } from "../../../types/BookReview";
 
 const BookReviews = () => {
   const router = useRouter();
@@ -26,24 +27,14 @@ const BookReviews = () => {
       )}
 
       {!loading &&
-        bookReviews?.map((val, i) => (
-          <div
+        bookReviews?.map((review, i) => (
+          <ReviewCard
             key={i}
-            style={{ border: "1px solid gray", margin: "2rem" }}
+            review={review}
             onClick={() => {
-              router.push(`book-reviews/${val.id}`);
+              router.push(`book-reviews/${review.id}`);
             }}
-          >
-            <h1>{val.title.value}</h1>
-            <p>{val.author.value}</p>
-            <p>{val.dateFinished.value.start}</p>
-            {val.genres.value?.map((val) => (
-              <div style={{ backgroundColor: val.color }} key={val.value}>
-                <p>{val.value}</p>
-              </div>
-            ))}
-            <p>{val.rating.value}/5</p>
-          </div>
+          />
         ))}
     </div>
   );

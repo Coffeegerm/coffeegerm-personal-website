@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { BookReview } from "../../types/BookReview";
+import { BookReview } from "../../../types/BookReview";
 
 const BookReviewDetails = () => {
   const router = useRouter();
