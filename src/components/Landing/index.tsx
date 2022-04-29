@@ -1,63 +1,48 @@
-import Image from "next/image";
-import WorkHistory from "../WorkHistory";
-import styles from "./Landing.module.css";
+import { WorkHistory } from "../../components";
+import styled from "styled-components";
 
-function SectionHeader({ title, index }: { title: string; index: number }) {
-  return (
-    <div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <h1>{index}.</h1>
-        <h2 style={{ marginLeft: "1rem" }}>{title}</h2>
-      </div>
-      <hr />
-    </div>
-  );
-}
+const Container = styled.div`
+  margin: 4rem;
+  section {
+    margin: 20rem 0;
+  }
+`;
+
+const SectionHeader = styled.h1`
+  overflow: hidden;
+
+  &:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+    left: 0.5em;
+    margin-right: -50%;
+  }
+`;
 
 export default function Landing() {
   return (
-    <main className={styles.container}>
-      <section className={styles.aboutSectionContainer}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <SectionHeader title="About Me" index={1} />
-          <h1 className="main-heading">
-            Hello. I&apos;m David. A software engineer.
-          </h1>
-          <h2>
-            &quot;The quieter you become, the more you can hear&quot; - Ram Dass
-          </h2>
-          <p>
-            I&apos;m also a lover of good coffee, tattoos, metal music, and
-            books.
-          </p>
-        </div>
-
-        <div>
-          <Image
-            src="/assets/IMG_1631.png"
-            height="500px"
-            width="400px"
-            alt="Me"
-          />
-        </div>
+    <Container>
+      <section>
+        <SectionHeader>About Me</SectionHeader>
+        <p>Hello</p>
+        <h1>My name is David.</h1>
       </section>
 
       <section>
-        <SectionHeader index={2} title="Places my code lives" />
-      </section>
-
-      <section>
-        <SectionHeader index={3} title="Things I've built" />
+        <SectionHeader>Places my code lives</SectionHeader>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <WorkHistory />
         </div>
       </section>
-    </main>
+
+      <section>
+        <SectionHeader>{`Thing's I've built`}</SectionHeader>
+      </section>
+    </Container>
   );
 }

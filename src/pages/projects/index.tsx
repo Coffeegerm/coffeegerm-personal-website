@@ -1,5 +1,23 @@
 import { useEffect, useState } from "react";
-import styles from "./projects.module.css";
+import styled from "styled-components";
+import { Card } from "../../components";
+
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  flex-direction: row;
+`;
+
+const Grid = styled.div`
+  display: flex;
+  flex: 3;
+  flex-wrap: wrap;
+`;
+
+const GridItem = styled.div`
+  flex: 1;
+`;
 
 type GithubProject = {
   id: number;
@@ -28,7 +46,7 @@ const Projects = () => {
     .map(({ value }) => value);
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", margin: "1rem" }}>
+    <Container>
       {loading && <h1>Loading...</h1>}
 
       {!loading && error && (
@@ -38,20 +56,23 @@ const Projects = () => {
         </div>
       )}
 
-      {!loading &&
-        shuffledRepos?.map((repo) => (
-          <div
-            key={repo.id}
-            className={styles.projectCard}
-            onClick={() => {
-              window.open(repo.html_url, "_blank");
-            }}
-          >
-            <h1>{repo.name}</h1>
-            <p>{repo.description}</p>
-          </div>
-        ))}
-    </div>
+      {!loading && (
+        <Grid>
+          {shuffledRepos?.map((repo) => (
+            <GridItem key={repo.id}>
+              <Card
+                onClick={() => {
+                  window.open(repo.html_url, "_blank");
+                }}
+                header={repo.name}
+              >
+                <p>{repo.description}</p>
+              </Card>
+            </GridItem>
+          ))}
+        </Grid>
+      )}
+    </Container>
   );
 };
 
