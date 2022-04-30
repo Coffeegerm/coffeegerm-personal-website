@@ -11,11 +11,6 @@ const notion = new Client({
   auth: NOTION_CLIENT_AUTH_SECRET,
 });
 
-type Data = {
-  reviews?: any;
-  error?: any;
-};
-
 export const getBookReviews = async () => {
   const response = await notion.databases.query({
     database_id: BOOK_REVIEWS_DATABASE_ID as string,
@@ -31,7 +26,7 @@ export const getBookReviews = async () => {
   );
 };
 
-const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (!BOOK_REVIEWS_DATABASE_ID) {
     return res.status(500).json({ error: "Key missing" });
   }
@@ -39,7 +34,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
   try {
     // get book review data
     const reviews = await getBookReviews();
-    res.status(200).json({ reviews });
+    res.status(200).json(reviews);
     return;
   } catch (error) {
     res.status(500).json({ error: JSON.stringify(error) });

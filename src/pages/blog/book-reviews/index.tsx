@@ -1,41 +1,43 @@
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-import ReviewCard from "../../../components/ReviewCard";
+import { ReviewCard } from "../../../components";
 import { BookReview } from "../../../types/BookReview";
+import { useFetch } from "../../../hooks";
+import styled from "styled-components";
+
+const ReviewGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.5rem;
+`;
 
 const BookReviews = () => {
-  const router = useRouter();
+  const { push } = useRouter();
 
-  const [bookReviews, setBookReviews] = useState<Array<BookReview>>([]);
-
-  const [loading, setLoading] = useState<boolean>(false);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch("/api/book-reviews")
-      .then((res) => res.json())
-      .then((data) => setBookReviews(data.reviews))
-      .finally(() => setLoading(false));
-  }, []);
+  const { data: bookReviews, loading } =
+    useFetch<Array<BookReview>>("/api/book-reviews");
 
   return (
-    <div style={{ margin: "4rem 2rem" }}>
+    <div style={{ margin: "6rem 2rem 2rem 2rem" }}>
       {loading && (
         <div>
           <p>Loading...</p>
         </div>
       )}
 
-      {!loading &&
-        bookReviews?.map((review, i) => (
-          <ReviewCard
-            key={i}
-            review={review}
-            onClick={() => {
-              router.push(`book-reviews/${review.id}`);
-            }}
-          />
-        ))}
+      {!loading && (
+        <ReviewGrid>
+          {bookReviews?.map((review, i) => (
+            <ReviewCard
+              key={i}
+              review={review}
+              onClick={() => {
+                push(`book-reviews/${review.id}`);
+              }}
+            />
+          ))}
+        </ReviewGrid>
+      )}
     </div>
   );
 };

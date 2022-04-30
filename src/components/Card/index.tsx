@@ -1,14 +1,41 @@
 import React from "react";
 import styled from "styled-components";
 
+type ChildrenProps = { children: React.ReactNode };
+
+const CardHeader = styled.h3`
+  font-size: 1.5rem;
+`;
+
+function Header({ children }: ChildrenProps) {
+  return <CardHeader>{children}</CardHeader>;
+}
+
+const CardContent = styled.div`
+  display: flex;
+  align-items: center;
+  > * {
+    margin-left: 1rem;
+  }
+`;
+
+function Content({ children }: ChildrenProps) {
+  return <CardContent>{children}</CardContent>;
+}
+
+const CardLabel = styled.h4``;
+
+function Label({ children }: ChildrenProps) {
+  return <CardLabel>{children}</CardLabel>;
+}
+
 const Container = styled.div`
   margin: 1rem;
   padding: 1rem;
   border-radius: 0.25rem;
-  transition: all 0.2s ease-in-out;
   flex: 1;
   background-color: #2c4463;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px, rgba(0, 0, 0, 0.05) 0px 0.5px 1px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 8px, rgba(0, 0, 0, 0.05) 0px 2px 4px;
   transition: all 0.3s ease-in-out;
 
   &:hover {
@@ -23,21 +50,16 @@ const Container = styled.div`
   }
 `;
 
-const CardHeader = styled.h3`
-  font-size: 1.5rem;
-`;
-
 type CardProps = {
-  children: React.ReactNode;
-  onClick: () => void;
-  header: string;
-};
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+} & ChildrenProps;
 
-export default function Card({ children, onClick, header }: CardProps) {
-  return (
-    <Container onClick={onClick}>
-      <CardHeader>{header}</CardHeader>
-      {children}
-    </Container>
-  );
+function Card({ children, onClick }: CardProps) {
+  return <Container onClick={onClick}>{children}</Container>;
 }
+
+Card.Header = Header;
+Card.Content = Content;
+Card.Label = Label;
+
+export default Card;

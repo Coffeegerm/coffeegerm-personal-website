@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Card } from "../../components";
+import { useFetch } from "../../hooks";
 
 const Container = styled.div`
   display: flex;
@@ -27,21 +27,16 @@ type GithubProject = {
 };
 
 const Projects = () => {
-  const [repos, setRepos] = useState<Array<GithubProject>>([]);
-  const [loading, setLoading] = useState<undefined | boolean>(undefined);
-  const [error, setError] = useState<undefined | boolean>(undefined);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch("https://api.github.com/users/coffeegerm/repos?per_page=100")
-      .then((res) => res.json())
-      .then(setRepos)
-      .catch(() => setError(true))
-      .finally(() => setLoading(false));
-  }, []);
+  const {
+    data: repos,
+    loading,
+    error,
+  } = useFetch<Array<GithubProject>>(
+    "https://api.github.com/users/coffeegerm/repos?per_page=100"
+  );
 
   const shuffledRepos = repos
-    .map((value) => ({ value, sort: Math.random() }))
+    ?.map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 
@@ -64,8 +59,8 @@ const Projects = () => {
                 onClick={() => {
                   window.open(repo.html_url, "_blank");
                 }}
-                header={repo.name}
               >
+                <Card.Header>{repo.name}</Card.Header>
                 <p>{repo.description}</p>
               </Card>
             </GridItem>

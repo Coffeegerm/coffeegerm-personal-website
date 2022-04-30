@@ -1,28 +1,18 @@
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { BookReview } from "../../../types/BookReview";
+import { useFetch } from "../../../hooks";
 
-const BookReviewDetails = () => {
-  const router = useRouter();
-  const { id } = router.query;
+export default function BookReviewDetails() {
+  const { query } = useRouter();
+  const { id } = query;
 
-  const [bookReviews, setBookReviews] = useState<
-    undefined | { info: BookReview; content: Array<string> }
-  >(undefined);
-
-  const [loading, setLoading] = useState<boolean>(false);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch(`/api/book-reviews/${id}`)
-      .then((res) => res.json())
-      .then((data) => setBookReviews(data))
-      .catch(console.error)
-      .finally(() => setLoading(false));
-  }, [id]);
+  const { data: bookReviews, loading } = useFetch<{
+    info: BookReview;
+    content: Array<string>;
+  }>(`/api/book-reviews/${id}`);
 
   return (
-    <div style={{margin: '4rem 2rem'}}>
+    <div style={{ margin: "4rem 2rem" }}>
       {loading && (
         <div>
           <p>Loading...</p>
@@ -48,6 +38,4 @@ const BookReviewDetails = () => {
       )}
     </div>
   );
-};
-
-export default BookReviewDetails;
+}
