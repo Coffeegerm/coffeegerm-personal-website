@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Layout = styled.div`
   margin-top: 50px;
-  max-width: 1080px;
+  max-width: 1200px;
   display: flex;
   flex: 1;
   justify-content: center;

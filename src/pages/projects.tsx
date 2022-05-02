@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Card } from "../../components";
-import { useFetch } from "../../hooks";
+import { Card } from "../components";
+import { useFetch } from "../hooks";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +17,8 @@ const Grid = styled.div`
 
 const GridItem = styled.div`
   flex: 1;
+  flex-basis: 33%;
+  flex:-grow: 1;
 `;
 
 type GithubProject = {

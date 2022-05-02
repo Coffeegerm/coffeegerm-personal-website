@@ -5,10 +5,9 @@ import { useFetch } from "../../../hooks";
 import styled from "styled-components";
 
 const ReviewGrid = styled.div`
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 0.5rem;
+  flex-direction:column;
 `;
 
 const BookReviews = () => {

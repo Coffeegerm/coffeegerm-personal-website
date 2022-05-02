@@ -21,3 +21,7 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
+button:hover {
+  cursor: pointer;
+}

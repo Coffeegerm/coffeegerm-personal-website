@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { BookReview } from "../../../types/BookReview";
 import { useFetch } from "../../../hooks";
+import { Chip, Card } from "../../../components";
 
 export default function BookReviewDetails() {
   const { query } = useRouter();
@@ -12,7 +13,7 @@ export default function BookReviewDetails() {
   }>(`/api/book-reviews/${id}`);
 
   return (
-    <div style={{ margin: "4rem 2rem" }}>
+    <div style={{ margin: "4rem 2rem", flex: 1 }}>
       {loading && (
         <div>
           <p>Loading...</p>
@@ -20,21 +21,33 @@ export default function BookReviewDetails() {
       )}
 
       {!loading && bookReviews && (
-        <div style={{ margin: "2rem" }}>
-          <h1>{bookReviews.info.title.value}</h1>
-          <p>{bookReviews.info.author.value}</p>
-          <p>{bookReviews.info.dateFinished.value.start}</p>
-          {bookReviews.info.genres.value?.map((val) => (
-            <div style={{ backgroundColor: val.color }} key={val.value}>
-              <p>{val.value}</p>
-            </div>
-          ))}
-          <p>{bookReviews.info.rating.value}/5</p>
+        <Card style={{ margin: "2rem", height: "auto" }}>
+          <Card.Header>{bookReviews.info.title.value}</Card.Header>
+          <Card.Content>
+            <Card.Label>Author:</Card.Label>
+            <p>{bookReviews.info.author.value}</p>
+          </Card.Content>
+          <Card.Content>
+            <Card.Label>Date Finished:</Card.Label>
+            <p>{bookReviews.info.dateFinished.value.start}</p>
+          </Card.Content>
+          <Card.Content>
+            <Card.Label>Genres:</Card.Label>
+            {bookReviews.info.genres.value?.map((val) => (
+              <Chip bgColor={val.color} key={val.value}>
+                {val.value}
+              </Chip>
+            ))}
+          </Card.Content>
+          <Card.Content>
+            <Card.Label>Rating:</Card.Label>
+            <p>{bookReviews.info.rating.value}/5</p>
+          </Card.Content>
 
           {bookReviews.content.map((val) => (
             <p key={val}>{val}</p>
           ))}
-        </div>
+        </Card>
       )}
     </div>
   );

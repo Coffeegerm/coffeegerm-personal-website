@@ -6,16 +6,13 @@ const Container = styled.div`
   border-radius: 1rem;
 `;
 
-export default function Chip({
-  children,
-  bgColor,
-}: {
+type ChipProps = {
   children: React.ReactNode;
   bgColor?: string;
-}) {
-  return (
-    <Container style={{ backgroundColor: bgColor || "transparent" }}>
-      {children}
-    </Container>
-  );
+};
+
+export default function Chip({ children, bgColor }: ChipProps) {
+  const backgroundColor = bgColor !== "default" ? bgColor : "#BFD9D4";
+  const color = bgColor === "default" ? "black" : undefined;
+  return <Container style={{ backgroundColor, color }}>{children}</Container>;
 }

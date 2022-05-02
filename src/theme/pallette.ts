@@ -6,7 +6,7 @@ const secondary = "##9BC4BC";
 const secondaryDarker = "#8BBBB2";
 const secondaryLighter = "#BFD9D4";
 
-export {
+export const pallette = {
   primary,
   primaryDarker,
   primaryLight,

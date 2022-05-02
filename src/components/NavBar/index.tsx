@@ -26,7 +26,6 @@ export default function NavBar() {
       </Link>
       <Link href="/projects">Projects</Link>
       <Link href="/uses">Uses</Link>
-      <Link href="/about">About</Link>
       <Link href="/blog">Blog</Link>
     </Nav>
   );

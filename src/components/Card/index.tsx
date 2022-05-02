@@ -37,6 +37,7 @@ const Container = styled.div`
   background-color: #2c4463;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 8px, rgba(0, 0, 0, 0.05) 0px 2px 4px;
   transition: all 0.3s ease-in-out;
+  height: 200px;
 
   &:hover {
     cursor: pointer;
@@ -52,10 +53,15 @@ const Container = styled.div`
 
 type CardProps = {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
+  style?: React.CSSProperties;
 } & ChildrenProps;
 
-function Card({ children, onClick }: CardProps) {
-  return <Container onClick={onClick}>{children}</Container>;
+function Card({ children, onClick, style }: CardProps) {
+  return (
+    <Container onClick={onClick} style={style}>
+      {children}
+    </Container>
+  );
 }
 
 Card.Header = Header;
