@@ -13,7 +13,7 @@ export default function BookReviewDetails() {
   }>(`/api/book-reviews/${id}`);
 
   return (
-    <div style={{ margin: "4rem 2rem", flex: 1 }}>
+    <div style={{ margin: "1rem", flex: 1 }}>
       {loading && (
         <div>
           <p>Loading...</p>
@@ -45,7 +45,9 @@ export default function BookReviewDetails() {
           </Card.Content>
 
           {bookReviews.content.map((val) => (
-            <p key={val}>{val}</p>
+            <Card.Content key={val}>
+              <p >{val}</p>
+            </Card.Content>
           ))}
         </Card>
       )}
