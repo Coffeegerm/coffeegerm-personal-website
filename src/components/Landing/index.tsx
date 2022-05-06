@@ -72,7 +72,7 @@ function Hero() {
       <p>
         Over the last few years I have worked with companies to build great
         software for web, servers, and mobile applications. Currently building a
-        mobile app to help you and your teams stay connected remotely at
+        mobile app to help you and your teams increase engagement and make working remotely easier at
         Pingboard.
       </p>
     </HeroContainer>
@@ -192,9 +192,9 @@ function ContactSection() {
       <h1 style={{ fontSize: "3rem" }}>Reach out</h1>
       <p style={{ maxWidth: "480px" }}>
         While not currently looking for a new role I am always open to talk
-        about coffee, code, a good game, or a new book.
+        about coffee, code, a good game, music, or a new book.
       </p>
-      <Button>Connect</Button>
+      <Button><a href="mailto:dyarzebinski97@gmail.com">Connect</a></Button>
     </ContactSectionContainer>
   );
 }
