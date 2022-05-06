@@ -23,7 +23,9 @@ const data = [
     employer: "Pingboard",
     timeframe: "May 2022 - Present",
     title: "Front end developer",
-    achievements: [],
+    achievements: [
+      "Help improve company culture with facilitated conversation about our values and what we as a company want to represent.",
+    ],
   },
   {
     employer: "CarLotz",
@@ -31,13 +33,18 @@ const data = [
     title: "Front end developer",
     achievements: [
       "Lead mobile development team in building a React Native application for users to browse and purchase vehicles",
+      "Mentor junior engineers with paired programming sessions to assist in their growth and learning.",
     ],
   },
   {
     employer: "Cloudfit",
     timeframe: "May 2019 - Sept 2021",
     title: "Full stack developer",
-    achievements: [],
+    achievements: [
+      "Moved a 70 year old pest company from using an IBM mainframe as their central place of data to the Cloud using Azure.",
+      "Created a React Native application to allow field techs to track their work while servicing a location.",
+      "Created a framework that used time signatures and layers to build server mutations so allow for a fully offline mobile application",
+    ],
   },
 ];
 
