@@ -37,7 +37,7 @@ const Container = styled.div`
   background-color: #2c4463;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 6px 8px, rgba(0, 0, 0, 0.05) 0px 2px 4px;
   transition: all 0.3s ease-in-out;
-  height: 200px;
+  min-height: 200px;
 
   &:hover {
     cursor: pointer;

@@ -55,7 +55,9 @@ const Projects = () => {
 
       {!loading && (
         <>
-          <p style={{margin: '1rem', textAlign: 'center', fontSize: '1.5rem'}}>
+          <p
+            style={{ margin: "1rem", textAlign: "center", fontSize: "1.5rem" }}
+          >
             I am an avid developer outside of work and have been trying to dip
             my toes into open source work more and more. Here are the projects
             that can be found on my GitHub.
@@ -69,7 +71,7 @@ const Projects = () => {
                   }}
                 >
                   <Card.Header>{repo.name}</Card.Header>
-                  <p>{repo.description}</p>
+                  <p>{repo.description || "No description available"}</p>
                 </Card>
               </GridItem>
             ))}

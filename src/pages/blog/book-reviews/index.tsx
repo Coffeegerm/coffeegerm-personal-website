@@ -5,9 +5,9 @@ import { useFetch } from "../../../hooks";
 import styled from "styled-components";
 
 const ReviewGrid = styled.div`
-  flex: 1;
   display: flex;
-  flex-direction:column;
+  flex: 1;
+  flex-wrap: wrap;
 `;
 
 const BookReviews = () => {
@@ -17,7 +17,7 @@ const BookReviews = () => {
     useFetch<Array<BookReview>>("/api/book-reviews");
 
   return (
-    <div style={{ margin: "6rem 2rem 2rem 2rem" }}>
+    <div style={{ margin: "1rem 0" }}>
       {loading && (
         <div>
           <p>Loading...</p>
