@@ -1,15 +1,27 @@
 import type { AppProps } from "next/app";
-import { NavBar } from "../components/NavBar";
+import { NavBar } from "../components";
 import "../styles/globals.css";
+import styled from "styled-components";
+
+const Layout = styled.div`
+  margin-top: 50px;
+  max-width: 1200px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  justify-self: center;
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <>
       <NavBar />
-      <div style={{ marginTop: "50px" }}>
-        <Component {...pageProps} />
+      <div style={{ justifyContent: "center", display: "flex" }}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </div>
-    </div>
+    </>
   );
 }
 
